@@ -10,6 +10,8 @@ Was implemented:
   <li>CI/CD pipeline by using GitHub Actions</li>
 </ul>
 
+Python version: 3.10.5
+
 ---
 <a name='return'></a>
 ## How to install?
