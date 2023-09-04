@@ -53,7 +53,7 @@ If you did everything right the name of the active virtual environment will appe
 
 <code>(name_of_venv) your_local_directory</code>
 
-*Note. To deacivate virtual local-enviroment use the command <code>deactivate</code> instead of <code>activate</code>.* 
+*Note. To deacivate virtual local-enviroment use the command <code>deactivate</code>.* 
 
 <a href='#return'>Return</a>
 
