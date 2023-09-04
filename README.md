@@ -10,7 +10,7 @@ Was implemented:
   <li>CI/CD pipeline by using GitHub Actions</li>
 </ul>
 
-Python version: 3.10.5
+The programming language used for the project: <code>python 3.10.5</code>.
 
 ---
 <a name='return'></a>
