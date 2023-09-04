@@ -1,0 +1,27 @@
+{% extends "base.html" %}
+
+{% block content %}
+<h1>IT-Bootcamp Project</h1>
+
+  <p>Welcome to <em>IT-Bootcamp Project</em>, a basic Django website developed as test for the IT Bootcamp.</p>
+
+<h2>Add book:</h2>
+
+<form method="POST">
+  {% csrf_token %}
+  <p>
+      <label>Enter the title</label><br>
+      <input type="text" name="title" />
+  </p>
+  <p>
+      <label>Select author(s) or <a href="{% url 'add_author' %}">add author`s name(s)</a> if it not in the list yet:</label><br>
+      <div>
+      {% for author in authors %}
+          <input type="checkbox" name="authors" value="{{ author.id }}"/> {{ author.name }}<br>
+      {% endfor %}
+      </div>
+  </p>
+  <input type="submit" value="Save" >
+</form>
+
+{% endblock %}

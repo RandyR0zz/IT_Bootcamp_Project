@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+
+{% block content %}
+<h1>IT-Bootcamp Project</h1>
+
+  <p>Welcome to <em>IT-Bootcamp Project</em>, a basic Django website developed as test for the IT Bootcamp.</p>
+
+<h2>Oh! Sorry something went wrong! There are several reasons for this mistake:</h2>
+
+<ul>
+  <li>Check <a href="{% url 'all_authors' %}">the list of authors</a> or <a href="{% url 'all_books' %}">the list of books</a>. 
+    Your author`s name or book`s title is already entered. <a href="{% url 'add_author' %}">Retry to add author</a> or <a href="{% url 'add_book' %}">book</a></li>
+  <li>Your data must not contain special character(s) or digit(s) or empty as well</li>
+  <li>You can`t add the book`s title without name of author</li>
+</ul>
+
+{% endblock %}

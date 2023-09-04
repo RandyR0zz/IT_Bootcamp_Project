@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+
+{% block content %}
+<h1>IT-Bootcamp Project</h1>
+
+  <p>Welcome to <em>IT-Bootcamp Project</em>, a basic Django website developed as test for the IT Bootcamp.</p>
+
+<h2>The project has the following record counts:</h2>
+
+  <ul>
+    <li><strong>Books:</strong> {{ num_books }}</li>
+    <li><strong>Authors:</strong> {{ num_authors }}</li>
+  </ul>
+
+{% endblock %}

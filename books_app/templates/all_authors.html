@@ -1,0 +1,27 @@
+{% extends "base.html" %}
+
+{% block content %}
+<h1>IT-Bootcamp Project</h1>
+
+  <p>Welcome to <em>IT-Bootcamp Project</em>, a basic Django website developed as test for the IT Bootcamp.</p>
+
+<h2>All authors:</h2>
+
+{% if authors %}
+<ul>
+
+  {% for author in authors %}
+    <li>
+      {{ author.name }}
+    </li>
+  {% endfor %}
+
+</ul>
+{% else %}
+  <p>There are no authors in the library yet. To add the author click on the link below.</p>
+{% endif %}
+
+<a href="{% url 'add_author' %}"><input type="submit" value="Add author"></a>
+<a href="{% url 'add_book' %}"><input type="submit" value="Add book"></a>
+
+{% endblock %}

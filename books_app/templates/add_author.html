@@ -1,0 +1,19 @@
+{% extends "base.html" %}
+
+{% block content %}
+<h1>IT-Bootcamp Project</h1>
+
+  <p>Welcome to <em>IT-Bootcamp Project</em>, a basic Django website developed as test for the IT Bootcamp.</p>
+
+<h2>Add author:</h2>
+
+<form method="POST">
+  {% csrf_token %}
+  <p>
+      <label>Enter author`s name:</label><br>
+      <input type="text" name="name" />
+  </p>
+  <input type="submit" value="Save" >
+</form>
+
+{% endblock %}
